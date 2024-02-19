@@ -1,13 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ticket Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+
 </head>
 
 <body>
+  <main class="max-w-[1200px] mx-auto">
+    <!-- Navbar section -->
+    <div class="navbar w-8/12 mx-auto bg-base-100">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          </div>
+
+        </div>
+        <a class="btn btn-ghost text-xl font-bold">P-Ticket</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-2 text-base">
+          <li><a>Home</a></li>
+          <li><a>About</a></li>
+          <li><a>Destination</a></li>
+          <li><a>Search</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end py-6">
+        <a class="btn bg-[#1DD1001A] rounded-xl border-solid border-2 border-[#1DD10066] font-bold text-[#1DD100]">Bus<span><img
+              src="images/bus-icon.png" alt=""></span></a>
+      </div>
+    </div>
+    <!-- Navbar end -->
+    <!-- Banner section. -->
+    <section class="bg-[url(images/banner.png)] bg-no-repeat bg-top ">
+      <div class=" mx-auto text-center ">
+        <h1 class="text-8xl pt-14 pb-8"><span class="text-white">End-to-End Travel with</span><br><span
+            class="text-[#1DD100]">P
+            Paribahan</span>
+        </h1>
+        <p class="text-lg text-white pb-8">Yes, you can run unit tests and view the results directly within the app.
+          <br>The
+          integrated
+          testing features
+          allow for a
+          streamlined .
+        </p>
+        <button class="btn rounded-xl border-[#1DD100] bg-[#1DD100] text-lg">Buy Tickets</button>
+        <div class="flex justify-evenly ">
+          <div class="card card-side bg-base-100 shadow-xl">
+            <img class="w-20 h-24 " src="images/people.png" alt="">
+            <div class="card-body">
+              <h2 class="card-title font-bold">500K+</h2>
+              <p>Registered users.</p>
+              <div class="card-actions justify-end">
+              </div>
+            </div>
+          </div>
+          <div class="card card-side bg-base-100  shadow-xl">
+            <img class="w-20 h-24" src="images/ticket-cupon.png" alt="">
+            <div class="card-body">
+              <h2 class="card-title font-bold">500K+</h2>
+              <p>Registered users.</p>
+              <div class="card-actions justify-end">
+              </div>
+            </div>
+          </div>
+          <div class="card card-side bg-base-100 shadow-xl">
+            <img class="w-20 h-24 " src="images/stoppage.png" alt="">
+            <div class="card-body">
+              <h2 class="card-title font-bold">500K+</h2>
+              <p>Registered users.</p>
+              <div class="card-actions justify-end">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Banner end -->
+    <!-- card offer -->
+    <section class="w-full">
+      <h1 class="font-bold text-[#030712FF] text-5xl mt-32 mb-20 text-center">Best offers for you</h1>
+      <div class="flex justify-evenly">
+        <div class="flex justify-evenly">
+          <div class="bg-[#FFBF0FFF] flex rounded-3xl w-[550px] h-[200px]">
+            <div class="flex flex-col justify-center gap-y-3 pl-12 pr-12">
+              <span class="font-extrabold text-[#030712CC] text-5xl">15% OFF </span>
+              <span class="text-[#030712CC]">on your next purchase </span>
+              <span class="text-[#03071280]">use by January 2024</span>
+            </div>
+            <span><img class="h-full w-full" src="images/cupon-devider.png" alt=""></span>
+            <div class="flex flex-col justify-center text-center ">
+              <span class="font-bold text-2xl">NEW15</span>
+              <span class="text-[#03071266]">Coupon Code</span>
+            </div>
+          </div>
+
+        </div>
+        <div class=" flex justify-evenly">
+          <div class="bg-[#F78C9CFF] flex rounded-3xl w-[550px] h-[200px]">
+            <div class="flex flex-col justify-center gap-y-3 pl-12 pr-12">
+              <span class="font-extrabold text-[#030712CC] text-5xl"> 20% OFF </span>
+              <span class="text-[#030712CC]">on your next purchase </span>
+              <span class="text-[#03071280]">use by January 2024</span>
+            </div>
+            <span><img class="h-full w-full" src="images/cupon-devider.png" alt=""></span>
+            <div class="flex flex-col justify-center">
+              <span class="font-bold text-2xl">Couple 20</span>
+              <span class="text-[#03071266]">Coupon Code</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <button class="btn btn-outline btn-success text-[#1DD100] border-[#1DD100] text-lg w-auto my-16 text-center">See
+        All
+        Offers</button>
+    </section>
+  </main>
+  <footer class="footer p-10 bg-black text-neutral-content max-w-full mx-auto justify-between">
+    <div class=" flex justify-between">
+      <nav>
+        <h6 class="footer-title font-extrabold text-3xl">P-Ticket</h6>
+        <a class="link link-hover">P-Ticket is a digital platform to make <br> your daily commuting better.</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title font-extrabold text-2xl">Download our app</h6>
+        <a class="link link-hover"><img src="images/googlefull.png" alt=""></a>
+      </nav>
+    </div>
+  </footer>
 
 </body>
 
