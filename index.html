@@ -14,6 +14,16 @@
     href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet"> -->
 
+  <style>
+    .font-inter {
+      font-family: "Inter", sans-serif;
+    }
+
+    .font-raleway {
+      font-family: "Raleway", sans-serif;
+    }
+  </style>
+
 
 </head>
 
@@ -46,8 +56,8 @@
     <!-- Banner section. -->
     <section class="bg-[url(images/banner.png)] bg-no-repeat bg-top ">
       <div class=" mx-auto text-center ">
-        <h1 class="text-8xl pt-14 pb-8"><span class="text-white">End-to-End Travel with</span><br><span
-            class="text-[#1DD100]">P
+        <h1 class="text-8xl font-bold pt-14 pb-8 font-raleway"><span class="text-white ">End-to-End Travel
+            with</span><br><span class="text-[#1DD100]">P
             Paribahan</span>
         </h1>
         <p class="text-lg text-white pb-8">Yes, you can run unit tests and view the results directly within the app.
@@ -58,7 +68,7 @@
           streamlined .
         </p>
         <button class="btn rounded-xl border-[#1DD100] bg-[#1DD100] text-lg">Buy Tickets</button>
-        <div class="flex justify-evenly mt-16">
+        <div class="flex justify-evenly mt-16 font-inter">
           <div class="card card-side bg-base-100 shadow-lg ">
             <img class="w-16 h-16  ml-5 mt-8" src="images/people.png" alt="">
             <div class="card-body">
@@ -92,18 +102,18 @@
     <!-- Banner end -->
     <!-- card offer -->
     <section class="w-full">
-      <h1 class="font-bold text-[#030712FF] text-5xl mt-32 mb-20 text-center">Best offers for you</h1>
+      <h1 class="font-bold font-raleway text-[#030712FF] text-5xl mt-32 mb-20 text-center">Best offers for you</h1>
       <div class="flex justify-evenly">
         <div class="flex justify-evenly">
           <div class="bg-[#FFBF0FFF] flex rounded-3xl w-[550px] h-[200px]">
             <div class="flex flex-col justify-center gap-y-3 pl-12 pr-12">
-              <span class="font-extrabold text-[#030712CC] text-5xl">15% OFF </span>
-              <span class="text-[#030712CC]">on your next purchase </span>
+              <span class="font-extrabold font-inter text-[#030712CC] text-5xl">15% OFF </span>
+              <span class="text-[#030712CC] font-semibold text-lg">on your next purchase </span>
               <span class="text-[#03071280]">use by January 2024</span>
             </div>
             <span><img class="h-full w-full" src="images/cupon-devider.png" alt=""></span>
-            <div class="flex flex-col justify-center text-center ">
-              <span class="font-bold text-2xl">NEW15</span>
+            <div class="flex flex-col justify-center text-center ml-8 ">
+              <span class="font-bold text-2xl font-raleway">NEW15</span>
               <span class="text-[#03071266]">Coupon Code</span>
             </div>
           </div>
@@ -112,13 +122,13 @@
         <div class=" flex justify-evenly">
           <div class="bg-[#F78C9CFF] flex rounded-3xl w-[550px] h-[200px]">
             <div class="flex flex-col justify-center gap-y-3 pl-12 pr-12">
-              <span class="font-extrabold text-[#030712CC] text-5xl"> 20% OFF </span>
-              <span class="text-[#030712CC]">on your next purchase </span>
+              <span class="font-extrabold text-[#030712CC] text-5xl font-inter"> 20% OFF </span>
+              <span class="text-[#030712CC] font-semibold text-lg">on your next purchase </span>
               <span class="text-[#03071280]">use by January 2024</span>
             </div>
             <span><img class="h-full w-full" src="images/cupon-devider.png" alt=""></span>
-            <div class="flex flex-col justify-center">
-              <span class="font-bold text-2xl">Couple 20</span>
+            <div class="flex flex-col justify-center ml-8">
+              <span class="font-bold text-2xl font-raleway">Couple 20</span>
               <span class="text-[#03071266]">Coupon Code</span>
             </div>
           </div>
@@ -135,6 +145,7 @@
     <!-- Function section -->
   </main>
   <section class="bg-[#F7F8F8FF] rounded-t-3xl">
+    <!-- Greenline Section -->
     <div class="">
       <div class="text-center mt-12 pt-16 pb-10">
         <h1 class="font-bold text-4xl">P.H Paribahan</h1>
@@ -145,65 +156,46 @@
           allow for a
           streamlined.</p>
       </div>
-      <div class="max-w-[1200px] mx-auto bg-white flex mt-5  gap-x-5 justify-between pt-6">
+      <div class="max-w-[1200px] mx-auto bg-white flex mt-5  gap-x-5 justify-between pt-6 rounded-3xl">
         <div class="flex ml-5 gap-x-5">
           <img class="w-16 h-12" src="images/bus-logo.png" alt="">
           <div>
             <h1 class="font-bold text-2xl">Greenline Paribahan</h1>
             <p class="text-[#03071299]">Coach-009-WEB ! AC_Business</p>
           </div>
-        </div>
-        <div class="flex">
-          <div>
-            <table class="table">
-              <!-- head -->
-              <thead>
-                <tr>
-                  <th></th>
-                  <th>Name</th>
-                  <th>Job</th>
-                  <th>Favorite Color</th>
-                </tr>
-              </thead>
-              <tbody>
-                <!-- row 1 -->
-                <tr>
-                  <th>1</th>
-                  <td>Cy Ganderton</td>
-                  <td>Quality Control Specialist</td>
-                  <td>Blue</td>
-                </tr>
-                <!-- row 2 -->
-                <tr>
-                  <th>2</th>
-                  <td>Hart Hagerty</td>
-                  <td>Desktop Support Technician</td>
-                  <td>Purple</td>
-                </tr>
-                <!-- row 3 -->
-                <tr>
-                  <th>3</th>
-                  <td>Brice Swyre</td>
-                  <td>Tax Accountant</td>
-                  <td>Red</td>
-                </tr>
-              </tbody>
-            </table>
+          <div class=" mt-28 -ml-72 bg-[#F7F8F8] w-[650px] h-[220px] rounded-xl p-5">
+            <div class="flex justify-between mb-5">
+              <p class="text-[#03071299] text-xl">Route</p>
+              <p class="text-black text-xl">Dhaka - Sylhet</p>
+            </div>
+            <hr class="text-[#03071233] border-dashed mb-5">
+            <div class="flex justify-between mb-5">
+              <p class="text-[#03071299] text-xl">Departure Time</p>
+              <p class="text-black text-xl">9.00 PM</p>
+            </div>
+            <hr class="text-[#03071233] border-dashed mb-5">
+            <div class="ml-4">
+              <button class="btn mr-4">Boarding Point - Laxmipur</button>
+              <button class="btn">Dropping Point - Bogura</button>
+              <button class="btn ml-2">Est. Time - 11 Hour</button>
+            </div>
           </div>
         </div>
+
         <div>
-          <button class="btn rounded-lg bg-[#1DD10026] text-[#1DD100]"><img src="images/seat-new.png" alt="">40
+          <button class="btn rounded-lg bg-[#1DD10026] text-[#1DD100] -ml-48 w-40"><img src="images/seat-new.png"
+              alt="">40
             Seats left</button>
         </div>
-        <div>
+        <div class="">
           <img src="images/info-devider.png" alt="">
         </div>
-        <div class="text-center items-center">
+        <div class="text-center mr-10 mt-28">
           <div>
-            <img src="images/fare.png" alt="">
+            <img class="ml-5 mb-6" src="images/fare.png" alt="">
           </div>
-          <h1 class="text-2xl font-bold">550 Taka</h1>
-          <p class="text-[#03071299]">Per Seat</p>
+          <h1 class="text-2xl font-bold mr-12">550 Taka</h1>
+          <p class="text-[#03071299] text-lg mr-10">Per Seat</p>
 
         </div>
 
