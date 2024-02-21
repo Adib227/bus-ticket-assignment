@@ -75,7 +75,8 @@
           streamlined .
         </p>
 
-        <button class="btn rounded-xl border-[#1DD100] bg-[#1DD100] text-lg">Buy Tickets</button>
+        <button class="btn rounded-xl border-[#1DD100] bg-[#1DD100] text-lg"><a href="#transfar">Buy
+            Tickets</a></button>
 
         <div class="flex justify-evenly mt-16 font-inter">
           <div class="card card-side bg-base-100 shadow-lg ">
@@ -201,8 +202,8 @@
         </div>
 
         <div>
-          <button class="btn rounded-lg bg-[#1DD10026] text-[#1DD100] -ml-48 w-40 mt-8"><img src="images/seat-new.png"
-              alt="">8
+          <button id="seat-left-button" class="btn rounded-lg bg-[#1DD10026] text-[#1DD100] -ml-48 w-40 mt-8"><img
+              src="images/seat-new.png" alt=""><span id="seat-left">8</span>
             Seats left</button>
         </div>
         <div class="">
@@ -225,7 +226,7 @@
 
   <!-- second part start -->
 
-  <section class="w-[1200px] mx-auto bg-white rounded-xl pt-8 flex justify-evenly mt-7">
+  <section id="transfar" class="w-[1200px] mx-auto bg-white rounded-xl pt-8 flex justify-evenly mt-7">
     <div class="">
       <div>
         <h1 class="text-2xl font-semibold">Select Your Seat</h1>
@@ -251,93 +252,113 @@
         </button>
 
       </div>
+
+      <!-- A row start -->
+
       <div class=" gap-5 mt-12">
         <div class="flex gap-x-5">
           <p class="mt-4">A</p>
           <div>
-            <button class="w-28 h-14 btn bg-[#F7F8F8] rounded-lg text-center py-4 seat-name">
+            <button onclick="buttonChange1()" id="seatA1"
+              class="w-28 h-14 btn btnonly bg-[#F7F8F8] rounded-lg text-center py-4 seat-name">
               <p>A1</p>
             </button>
-            <button class="w-28 h-14 btn bg-[#F7F8F8] rounded-lg text-center py-4 seat-name">
+            <button onclick="buttonChange2()" id="seatA2"
+              class="w-28 h-14 btn btnonly bg-[#F7F8F8] rounded-lg text-center py-4 seat-name">
               <p>A2</p>
           </div>
           <br>
           <div class="">
             </button>
-            <button class="w-28 h-14 btn bg-[#F7F8F8] rounded-lg text-center py-4 seat-name">
+            <button onclick="buttonChange3()" id="seatA3"
+              class="w-28 h-14 btn btnonly bg-[#F7F8F8] rounded-lg text-center py-4 seat-name">
               <p>A3</p>
             </button>
-            <button class="w-28 h-14 btn bg-[#F7F8F8] rounded-lg text-center py-4 seat-name">
+            <button onclick="buttonChange4()" id="seatA4"
+              class="w-28 h-14 btn btnonly bg-[#F7F8F8] rounded-lg text-center py-4 seat-name">
               <p>A4</p>
             </button>
           </div>
         </div>
       </div>
+
+      <!-- A row end -->
+
+
+      <!-- B row start -->
+
       <div class=" gap-5 mt-12">
         <div class="flex gap-x-5">
           <p class="mt-4">B</p>
           <div>
-            <button class="w-28 h-14 btn bg-[#F7F8F8] rounded-lg text-center py-4 seat-name">
+            <button onclick="buttonChange5()" id="seatB1"
+              class="w-28 h-14 btn btnonly bg-[#F7F8F8] rounded-lg text-center py-4 seat-name">
               <p>B1</p>
             </button>
-            <button class="w-28 h-14 btn bg-[#F7F8F8] rounded-lg text-center py-4 seat-name">
+            <button onclick="buttonChange6()" id="seatB2"
+              class="w-28 h-14 btn btnonly bg-[#F7F8F8] rounded-lg text-center py-4 seat-name">
               <p>B2</p>
           </div>
           <br>
           <div class="">
             </button>
-            <button class="w-28 h-14 btn bg-[#F7F8F8] rounded-lg text-center py-4 seat-name">
+            <button onclick="buttonChange7()" id="seatB3"
+              class="w-28 h-14 btn btnonly bg-[#F7F8F8] rounded-lg text-center py-4 seat-name">
               <p>B3</p>
             </button>
-            <button class="w-28 h-14 btn bg-[#F7F8F8] rounded-lg text-center py-4 seat-name">
+            <button onclick="buttonChange8()" id="seatB4"
+              class="w-28 h-14 btn btnonly bg-[#F7F8F8] rounded-lg text-center py-4 seat-name">
               <p>B4</p>
             </button>
           </div>
         </div>
       </div>
-    </div>
-    <div class=" space-y-8">
-      <div>
-        <h1 class="text-2xl font-semibold">Select Your Seat</h1>
-      </div>
-      <hr class="text-[#03071233] border-dashed my-5">
 
-      <div class="bg-[#F7F8F8] p-6 rounded-2xl">
-        <div class="flex justify-around items-center mt-4 gap-20 font-medium text-base">
-          <p>Seat <button class="bg-[#1DD100] w-5 h-6 rounded-full"><span class="text-white">0</span></button></p>
-          <p>Class</p>
-          <p>Price</p>
+    </div>
+    <!-- B row end -->
+
+
+
+    <div>
+
+      <div class=" space-y-8">
+        <div>
+          <h1 class="text-2xl font-semibold">Select Your Seat</h1>
         </div>
         <hr class="text-[#03071233] border-dashed my-5">
 
-        <div>
-          <div class="flex justify-between items-center px-1">
-            <p>C2</p>
-            <p>Economy</p>
-            <p>550</p>
+        <div class="bg-[#F7F8F8] p-6 rounded-2xl">
+          <div class="flex justify-around items-center mt-4 gap-20 font-medium text-base">
+            <p>Seat <button id="seat-count" class="bg-[#1DD100] w-5 h-6 rounded-full"><span
+                  class="text-white">0</span></button></p>
+            <p>Class</p>
+            <p>Price</p>
           </div>
-          <div class="flex justify-between items-center px-1">
-            <p>C2</p>
-            <p>Economy</p>
-            <p>550</p>
-          </div>
-        </div>
+          <hr class="text-[#03071233] border-dashed my-5">
 
-        <div class="pt-10">
-          <hr class="mb-5">
-          <div class="flex justify-between items-center">
-            <p class="font-medium text-base">Total Price</p>
-            <p class="font-medium text-base">BDT 1100</p>
+          <div id="seat-entry" class="grid grid-cols-3 justify-between items-center px-1">
+
+
           </div>
-          <div class="my-2">
-            <label class="input input-bordered flex items-center gap-2">
-              <input type="text" class="grow" placeholder="Have any coupon?" />
-              <span id="apply-btn" class="bg-[#1DD100] btn px-4 text-white font-normal rounded-lg h-[10px]">Apply</span>
-            </label>
-          </div>
-          <div class="flex justify-between items-center">
-            <p class="font-medium text-base">Grand Total</p>
-            <p class="font-medium text-base">BDT 1100</p>
+
+
+          <div class="pt-10">
+            <hr class="mb-5">
+            <div class="flex justify-between items-center">
+              <p class="font-medium text-base">Total Price</p>
+              <p class="font-medium text-base">BDT <span id="total-price">0</span></p>
+            </div>
+            <div class="my-2">
+              <label class="input input-bordered flex items-center gap-2">
+                <input type="text" class="grow" placeholder="Have any coupon?" />
+                <span id="apply-btn"
+                  class="bg-[#1DD100] btn px-4 text-white font-normal rounded-lg h-[10px]">Apply</span>
+              </label>
+            </div>
+            <div class="flex justify-between items-center">
+              <p class="font-medium text-base">Grand Total</p>
+              <p class="font-medium text-base">BDT <span id="grand-total">0</span></p>
+            </div>
           </div>
         </div>
       </div>
@@ -354,8 +375,12 @@
           <div class="label">
             <span class="label-text font-semibold text-base">Phone Number*</span>
           </div>
-          <input type="number" placeholder="Enter your phone number" class="input input-bordered w-full max-w-xs" />
+          <input type="number" pattern="[0-9]{11}" placeholder="Enter your phone number"
+            class="input input-bordered w-full max-w-xs" />
         </label>
+        <input type="tel" id="bangladeshPhoneNumber" name="bangladeshPhoneNumber" pattern="[0-9]{11}"
+          title="Please enter a valid 11-digit Bangladesh phone number" placeholder="e.g., 01XXXXXXXXX" required>
+
         <label class="form-control w-full max-w-xs">
           <div class="label">
             <span class="label-text font-semibold text-base">Email ID</span>
@@ -369,8 +394,9 @@
         <p class="underline">Cancellation Policy</p>
         <p class="underline">Terms and conditions</p>
       </div>
-
     </div>
+
+
   </section>
 
   <!-- second part end -->
