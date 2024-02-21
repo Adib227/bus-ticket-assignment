@@ -70,26 +70,42 @@ let seatCount = 0;
 let totalPrice = 0;
 let ticketPrice = 550;
 
+
 for (const btn of allBtn) {
   btn.addEventListener("click", function (e) {
-    //seat left
     if (count > 4) {
       count = count - 1;
       totalPrice = ticketPrice + totalPrice;
     }
 
     document.getElementById("seat-left").innerText = count;
-    //seat count
+     
     if (seatCount < 4) {
       seatCount = seatCount + 1;
     }
     document.getElementById("seat-count").innerText = seatCount;
 
-    // total price
-
     document.getElementById("total-price").innerText = totalPrice;
 
-    // grand total
     document.getElementById("grand-total").innerText = totalPrice;
   });
+}
+
+updateGrandTotal();
+
+function updateGrandTotal(status) {
+  const totalPrice = getConvertedValue("total-price");
+  if (status == undefined) {
+    document.getElementById("grand-total").innerText = totalPrice;
+  }
+  else {
+    const couponCode = document.getElementById("coupon-code").value;
+
+    if (couponCode == "NEW15") {
+      const discounted = totalPrice * .2;
+      console.log(discounted);
+    } else {
+      alert("Please enter valid coupon code");
+    }
+  }
 }
