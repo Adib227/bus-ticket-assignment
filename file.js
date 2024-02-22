@@ -88,24 +88,33 @@ for (const btn of allBtn) {
     document.getElementById("total-price").innerText = totalPrice;
 
     document.getElementById("grand-total").innerText = totalPrice;
+
+    updateGrandTotal();
   });
 }
 
-updateGrandTotal();
 
 function updateGrandTotal(status) {
-  const totalPrice = getConvertedValue("total-price");
-  if (status == undefined) {
+  if (status === undefined) {
     document.getElementById("grand-total").innerText = totalPrice;
-  }
-  else {
+  } else {
     const couponCode = document.getElementById("coupon-code").value;
+    let discounted = 0;
 
-    if (couponCode == "NEW15") {
-      const discounted = totalPrice * .2;
-      console.log(discounted);
+    if (couponCode === "Couple 20") {
+      discounted = totalPrice * 0.2;
+    } else if (couponCode === "NEW15") {
+      discounted = totalPrice * 0.15;
     } else {
-      alert("Please enter valid coupon code");
+      alert("Please enter a valid coupon code");
+    }
+
+    if (discounted > 0) {
+      const grandTotal = totalPrice - discounted;
+      console.log("Discounted amount:", discounted);
+      document.getElementById("grand-total").innerText = grandTotal;
+
+      couponCode.style.display = "none";
     }
   }
 }
